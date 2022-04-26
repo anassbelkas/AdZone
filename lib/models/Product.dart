@@ -15,26 +15,51 @@ class Product {
 
 List<Product> demo_product = [
   Product(
-    image: "assets/images/product_0.png",
-    title: "Long Sleeve Shirts",
+    image: "assets/images/coupon1.jpg",
+    title: "Coupon 50%",
     price: 165,
     bgColor: const Color(0xFFFEFBF9),
   ),
   Product(
-    image: "assets/images/product_1.png",
-    title: "Casual Henley Shirts",
+    image: "assets/images/coupon_policy.png",
+    title: "Coupon 20%",
     price: 99,
   ),
   Product(
-    image: "assets/images/product_2.png",
-    title: "Curved Hem Shirts",
+    image: "assets/images/cards/edgars.png",
+    title: "Gift card #1",
     price: 180,
     bgColor: const Color(0xFFF8FEFB),
   ),
   Product(
-    image: "assets/images/product_3.png",
-    title: "Casual Nolin",
+    image: "assets/images/cards/spur.png",
+    title: "Gift card #2",
     price: 149,
+    bgColor: const Color(0xFFEEEEED),
+  ),
+];
+List<Product> available_rewards = [
+  Product(
+    image: "assets/images/cards/freedrgift.jpg",
+    title: "Gift card #5",
+    price: 5000,
+    bgColor: const Color(0xFFFEFBF9),
+  ),
+  Product(
+    image: "assets/images/cards/game.png",
+    title: "Gift card #3",
+    price: 2000,
+  ),
+  Product(
+    image: "assets/images/cards/zando.png",
+    title: "Gift card #7",
+    price: 1000,
+    bgColor: const Color(0xFFF8FEFB),
+  ),
+  Product(
+    image: "assets/images/cards/makro.png",
+    title: "Gift card #4",
+    price: 9999,
     bgColor: const Color(0xFFEEEEED),
   ),
 ];

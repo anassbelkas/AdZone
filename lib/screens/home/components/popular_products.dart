@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish/models/Product.dart';
+import 'package:stylish/screens/details/details_screen2.dart';
 
 import '../../../constants.dart';
 import 'product_card.dart';
@@ -27,15 +28,22 @@ class PopularProducts extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           child: Row(
             children: List.generate(
-              demo_product.length,
+              available_rewards.length,
               (index) => Padding(
                 padding: const EdgeInsets.only(right: defaultPadding),
                 child: ProductCard(
-                  title: demo_product[index].title,
-                  image: demo_product[index].image,
-                  price: demo_product[index].price,
-                  bgColor: demo_product[index].bgColor,
-                  press: () {},
+                  title: available_rewards[index].title,
+                  image: available_rewards[index].image,
+                  price: available_rewards[index].price,
+                  bgColor: available_rewards[index].bgColor,
+                  press: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              DetailsScreen2(product: available_rewards[index]),
+                        ));
+                  },
                 ),
               ),
             ),

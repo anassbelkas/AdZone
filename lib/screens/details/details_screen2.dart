@@ -5,8 +5,8 @@ import 'package:stylish/models/Product.dart';
 
 import 'components/color_dot.dart';
 
-class DetailsScreen extends StatelessWidget {
-  const DetailsScreen({Key? key, required this.product}) : super(key: key);
+class DetailsScreen2 extends StatelessWidget {
+  const DetailsScreen2({Key? key, required this.product}) : super(key: key);
 
   final Product product;
 
@@ -49,7 +49,7 @@ class DetailsScreen extends StatelessWidget {
                       ),
                       const SizedBox(width: defaultPadding),
                       Text(
-                        "Owned",
+                        product.price.toString() + " Points",
                         style: Theme.of(context).textTheme.headline6,
                       ),
                     ],
@@ -91,7 +91,7 @@ class DetailsScreen extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                             primary: primaryColor,
                             shape: const StadiumBorder()),
-                        child: const Text("Redeem"),
+                        child: const Text("Buy"),
                       ),
                     ),
                   )

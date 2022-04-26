@@ -51,10 +51,10 @@ class ProductCard extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: defaultPadding / 4),
-                Text(
-                  "\$" + price.toString(),
-                  style: Theme.of(context).textTheme.subtitle2,
-                ),
+                // Text(
+                //   "\$" + price.toString(),
+                //   style: Theme.of(context).textTheme.subtitle2,
+                // ),
               ],
             )
           ],
